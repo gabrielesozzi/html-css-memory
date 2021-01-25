@@ -10,7 +10,9 @@ body {
 
 h1 {
   text-align: center;
-  color: #FFFFFF
+  color: #FFFFFF;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 [class^="card"] {
@@ -19,6 +21,8 @@ h1 {
   background: url("../img/pattern.png") repeat;
   background-size: contain;
   margin: 10px 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px grey;
 }
 
 [class^="row"] {
@@ -54,6 +58,10 @@ h1 {
   float: left;
 }
 
+span {
+  visibility: hidden;
+}
+
 .air_baloon:hover  {
  background: white url("../img/noun_air_balloon_3134741.png") no-repeat center;
  background-size:contain;
@@ -65,6 +73,7 @@ h1 {
   position: absolute;
   bottom: 5px;
   left: 40px;
+  visibility: visible;
 }
 
 .tractor {

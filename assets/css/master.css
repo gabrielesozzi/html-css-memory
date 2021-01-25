@@ -8,11 +8,20 @@ body {
   background-color: #ADD8E6
 }
 
-h1 {
+h1, h3 {
+  font-family: 'Potta One', cursive;
   text-align: center;
-  color: #FFFFFF;
   padding-top: 20px;
+}
+
+h1 {
+  color: #FFFFFF;
   padding-bottom: 30px;
+  font-size: 50px;
+}
+
+h3 {
+  color: #232C2E;
 }
 
 [class^="card"] {
@@ -33,27 +42,12 @@ h1 {
   clear: both;
 }
 
-[class^="col"] {
+div.col {
   width: 100%;
   height: 210px;
 }
 
-.card1 {
-  width: 22%;
-  float: left;
-}
-
-.card2 {
-  width: 22%;
-  float: left;
-}
-
-.card3 {
-  width: 22%;
-  float: left;
-}
-
-.card4 {
+.card1, .card2, .card3, .card4{
   width: 22%;
   float: left;
 }
@@ -62,30 +56,81 @@ span {
   visibility: hidden;
 }
 
-.air_baloon:hover  {
+.face_card  {
  background: white url("../img/noun_air_balloon_3134741.png") no-repeat center;
  background-size:contain;
  position: relative;
 }
 
-.air_baloon:hover span {
+.face_card span {
   color: #DA589D;
   position: absolute;
-  bottom: 5px;
-  left: 40px;
+  bottom: 1%;
+  left: 15%;
   visibility: visible;
+  font-family: 'Potta One', cursive;
+  font-size: 25px;
 }
 
-.tractor {
+.tractor:hover {
   background: white url("../img/noun_Tractor_3134797.png") no-repeat;
+}
+
+.tractor:hover span {
+  color: #D18441;
+}
+
+.bicycle:hover {
+  background: white url("../img/noun_Bicycle_3134821.png") no-repeat;
+}
+
+.bicycle:hover span {
+  color: #EAF207;
+}
+
+.cruise_ship:hover {
+  background: white url("../img/noun_Cruise_Ship_3134824.png") no-repeat;
+}
+
+.cruise_ship:hover span {
+  color: #ED0909;
+}
+
+.submarine:hover {
+  background: white url("../img/noun_Submarine_3134738.png") no-repeat;
+}
+
+.submarine:hover span {
+  color: #11D642;
+}
+
+.tram:hover {
+  background: white url("../img/noun_Tram_3134750.png") no-repeat;
+}
+
+.tram:hover span {
+  color: #36BFDB;
+}
+
+.air_baloon:hover {
+  background: white url("../img/noun_air_balloon_3134741.png") no-repeat;
+}
+
+.air_baloon:hover span {
+  color: #DA589D;
+}
+
+.air_baloon:hover span, .tram:hover span, .submarine:hover span, .cruise_ship:hover span, .bicycle:hover span, .tractor:hover span  {
+  position: absolute;
+  bottom: 1%;
+  left: 15%;
+  visibility: visible;
+  font-family: 'Potta One', cursive;
+  font-size: 25px;
+}
+
+.tractor:hover, .bicycle:hover, .cruise_ship:hover, .submarine:hover, .tram:hover, .air_baloon:hover {
   background-size:contain;
   position: relative;
   background-position: left top;
-}
-
-.tractor span {
-  color: #D18441;
-  position: absolute;
-  bottom: 5px;
-  left: 40px;
 }

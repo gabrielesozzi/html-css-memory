@@ -14,49 +14,53 @@ h1 {
 }
 
 [class^="card"] {
-  width: 150px;
-  height: 200px;
+  height: 250px;
+  width: auto;
   background: url("../img/pattern.png") repeat;
   background-size: contain;
+  margin: 10px 10px;
 }
 
 [class^="row"] {
-  width: 80%;
+  width: 70%;
   margin: auto;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 [class^="col"] {
   width: 100%;
   height: 210px;
-  position: relative;
 }
 
 .card1 {
-  position: absolute;
-  left: 20%;
+  width: 22%;
+  float: left;
 }
 
 .card2 {
-  position: absolute;
-  left: 35%;
+  width: 22%;
+  float: left;
 }
 
 .card3 {
-  position: absolute;
-  left: 50%;
+  width: 22%;
+  float: left;
 }
 
 .card4 {
-  position: absolute;
-  left: 65%;
+  width: 22%;
+  float: left;
 }
 
-.air_baloon {
+.air_baloon:hover  {
  background: white url("../img/noun_air_balloon_3134741.png") no-repeat center;
  background-size:contain;
+ position: relative;
 }
 
-.air_baloon span {
+.air_baloon:hover span {
   color: #DA589D;
   position: absolute;
   bottom: 5px;
@@ -64,8 +68,10 @@ h1 {
 }
 
 .tractor {
-  background: white url("../img/noun_Tractor_3134797.png") no-repeat center;
+  background: white url("../img/noun_Tractor_3134797.png") no-repeat;
   background-size:contain;
+  position: relative;
+  background-position: left top;
 }
 
 .tractor span {
